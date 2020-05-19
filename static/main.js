@@ -37,13 +37,13 @@
 					// Images (in the format of 'url': 'alignment').
 						images: {
 							'static/images/fulls/10.jpg': 'center',
-							'static/imagesfulls/01.jpg': 'center',
-							'static/imagesfulls/02.jpg': 'center',
-							'static/imagesfulls/03.jpg': 'center',
-							'static/imagesfulls/04.jpg': 'center',
-							'static/imagesfulls/05.jpg': 'center',
-							'static/imagesfulls/06.jpg': 'center',
-							'static/imagesfulls/07.jpg': 'center'
+							'static/images/fulls/01.jpg': 'center',
+							'static/images/fulls/02.jpg': 'center',
+							'static/images/fulls/03.jpg': 'center',
+							'static/images/fulls/04.jpg': 'center',
+							'static/images/fulls/05.jpg': 'center',
+							'static/images/fulls/06.jpg': 'center',
+							'static/images/fulls/07.jpg': 'center'
 							
 							
 							
