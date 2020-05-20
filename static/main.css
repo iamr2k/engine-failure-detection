@@ -455,8 +455,9 @@ button,
   padding: 0 1.125em;
   text-align: center;
   text-decoration: none;
-  min-width: 20px;
-  max-width: 20px;
+  min-width: 20%;
+  max-width: 20%;
+  padding: 15px
   text-align: center;
   text-decoration: none;
   white-space: nowrap; }
