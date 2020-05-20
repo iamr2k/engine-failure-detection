@@ -36,7 +36,7 @@
 
 					// Images (in the format of 'url': 'alignment').
 						images: {
-							'static/images/fulls/01.gif': 'center'
+							'static/images/01.gif': 'center'
 							
 							
 							
