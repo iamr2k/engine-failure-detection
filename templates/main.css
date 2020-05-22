@@ -18,7 +18,6 @@ footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
-  font-weight: 100;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline; }
@@ -131,7 +130,7 @@ body {
   transition: opacity 2s ease-in-out;
   height: 100%;
   left: 0;
-  opacity: 0.375;
+  opacity: 0.5;
   position: fixed;
   top: 0;
   width: 100%;
@@ -227,69 +226,22 @@ body {
     -ms-transform: translateX(-25%);
     transform: translateX(-25%); } }
 
-/* Type */
-body, input, select, textarea {
-  color: rgba(255, 255, 255, 0.75);
-  font-family: "Roboto", sans-serif;
-  font-size: 16pt;
-  font-weight: 400;
-  letter-spacing: -0.01em;
-  line-height: 1.65em; }
-  @media screen and (max-width: 1680px) {
-    body, input, select, textarea {
-      font-size: 12pt; } }
-  @media screen and (max-width: 1280px) {
-    body, input, select, textarea {
-      font-size: 11pt; } }
-  @media screen and (max-width: 980px) {
-    body, input, select, textarea {
-      font-size: 12pt; } }
-  @media screen and (max-width: 736px) {
-    body, input, select, textarea {
-      font-size: 12pt; } }
-  @media screen and (max-width: 480px) {
-    body, input, select, textarea {
-      font-size: 12pt; } }
-
-a {
-  -moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
-  -webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
-  -ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
-  transition: border-bottom-color 0.2s ease, color 0.2s ease;
-  border-bottom: dotted 1px rgba(255, 255, 255, 0.25);
-  color: #1cb495;
-  text-decoration: none; }
-  a:hover {
-    border-bottom-color: transparent;
-    color: #1cb495 !important;
-    text-decoration: none; }
-
-strong, b {
-  color: #fff;
-  font-weight: 700; }
-
-em, i {
-  font-style: italic; }
 
 p {
   margin: 0 0 2em 0; }
 
 h1, h2, h3, h4, h5, h6 {
   color: #fff;
-  font-weight: 100;
-  line-height: 2em;
-  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  line-height: 1em;
   margin: 0 0 1em 0; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     color: inherit;
-    font-weight: 100;
-    font-family: 'Raleway', sans-serif;
     text-decoration: none; }
 
 h1 {
   font-size: 2.5em;
-  font-weight: 80;
-  font-family: 'Raleway', sans-serif; }
+  line-height: 1.25em; }
 
 h2 {
   font-size: 1.75em;
@@ -361,24 +313,12 @@ section.special, article.special {
 header p {
   color: rgba(255, 255, 255, 0.5);
   position: relative;
-  margin: 0 0 1.5em 0;
-  -webkit-animation: mainFadeIn 0.5s forwards;
-  -o-animation: mainFadeIn 0.5s forwards;
-  animation: mainFadeIn 0.5s forwards;
-  animation-delay: 0.9s;
-  opacity: 0;
- }
+  margin: 0 0 1.5em 0; }
 
 header h2 + p {
   font-size: 1.25em;
   margin-top: -1em;
-  line-height: 1.5em;
-  -webkit-animation: mainFadeIn 0.5s forwards;
-  -o-animation: mainFadeIn 0.5s forwards;
-  animation: mainFadeIn 0.5s forwards;
-  animation-delay: 0.9s;
-  opacity: 0;
- }
+  line-height: 1.5em; }
 
 header h3 + p {
   font-size: 1.1em;
@@ -444,110 +384,42 @@ ul {
   ul li {
     padding-left: 0.5em; }
 
+button {
+
+  padding: 10px;
+  max-width: 20vw;
+  min-width: 20vw;
+  background-color: transparent;
+  border-color: rgb(37, 206, 206);
+  color: #fff;
+  
+}
+button :hover{
+  background-color: #fff;
+  color: #000;
+}
 
 
-/* Button */
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
-button,
-.button {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
-  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
-  -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
-  background-color: #ffffff;
-  border-radius: 10px;
-  border: 1px black;
-  color: #000000 !important;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: 700;
-  height: 2.75em;
-  line-height: 2.75em;
-  padding: 0 1.125em;
-  text-align: center;
-  text-decoration: none;
-  min-width: 50%;
-  max-width: 50%;
-  padding: 15px
-  text-align: center;
-  text-decoration: none;
-  white-space: nowrap; }
-  input[type="submit"]:hover,
-  input[type="reset"]:hover,
-  input[type="button"]:hover,
-  button:hover,
-  .button:hover {
-    background-color: #1fcaa7; }
-  input[type="submit"]:active,
-  input[type="reset"]:active,
-  input[type="button"]:active,
-  button:active,
-  .button:active {
-    background-color: #25f594; }
-  input[type="submit"].disabled, input[type="submit"]:disabled,
-  input[type="reset"].disabled,
-  input[type="reset"]:disabled,
-  input[type="button"].active,
-  input[type="button"]:active,
-  button.disabled,
-  button:disabled,
-  .button.disabled,
-  .button:disabled {
-    opacity: 0.5; }
-  @media screen and (max-width: 480px) {
-    input[type="submit"],
-    input[type="reset"],
-    input[type="button"],
-    button,
-    .button {
-      padding: 0; } }
 
 /* Header */
 #header h1 {
   font-size: 3.25em;
-  font-weight: 100;
-  margin: 0 0 0.55em 0;
-  font-family: 'Raleway', sans-serif;
-  -webkit-animation: mainFadeIn 0.5s forwards;
-  -o-animation: mainFadeIn 0.5s forwards;
-  animation: mainFadeIn 0.5s forwards;
-  animation-delay: 0.9s;
-  opacity: 0; }
+  margin: 0 0 0.55em 0; }
 
 #header p {
   font-size: 1.35em;
-  line-height: 1.65em; 
-  -webkit-animation: mainFadeIn 0.5s forwards;
-  -o-animation: mainFadeIn 0.5s forwards;
-  animation: mainFadeIn 0.5s forwards;
-  animation-delay: 0.9s;
-  opacity: 0;}
+  line-height: 1.65em; }
 
 #header a {
   color: inherit; }
 
 @media screen and (max-width: 736px) {
   #header h1 {
-    font-size: 2em;
-    font-weight: 100;
-    font-family: 'Raleway', sans-serif; }
+    font-size: 2em; }
   #header p {
     font-size: 1em; } }
 
 @media screen and (max-width: 480px) {
   #header {
     margin: 0 0 1em 0; } }
-@keyframes mainFadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-  
+

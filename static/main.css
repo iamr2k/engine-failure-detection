@@ -226,49 +226,6 @@ body {
     -ms-transform: translateX(-25%);
     transform: translateX(-25%); } }
 
-/* Type */
-body, input, select, textarea {
-  color: rgba(255, 255, 255, 0.75);
-  font-family: "Roboto", sans-serif;
-  font-size: 16pt;
-  font-weight: 400;
-  letter-spacing: -0.01em;
-  line-height: 1.65em; }
-  @media screen and (max-width: 1680px) {
-    body, input, select, textarea {
-      font-size: 12pt; } }
-  @media screen and (max-width: 1280px) {
-    body, input, select, textarea {
-      font-size: 11pt; } }
-  @media screen and (max-width: 980px) {
-    body, input, select, textarea {
-      font-size: 12pt; } }
-  @media screen and (max-width: 736px) {
-    body, input, select, textarea {
-      font-size: 12pt; } }
-  @media screen and (max-width: 480px) {
-    body, input, select, textarea {
-      font-size: 12pt; } }
-
-a {
-  -moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
-  -webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
-  -ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
-  transition: border-bottom-color 0.2s ease, color 0.2s ease;
-  border-bottom: dotted 1px rgba(255, 255, 255, 0.25);
-  color: #1cb495;
-  text-decoration: none; }
-  a:hover {
-    border-bottom-color: transparent;
-    color: #1cb495 !important;
-    text-decoration: none; }
-
-strong, b {
-  color: #fff;
-  font-weight: 700; }
-
-em, i {
-  font-style: italic; }
 
 p {
   margin: 0 0 2em 0; }
@@ -427,64 +384,22 @@ ul {
   ul li {
     padding-left: 0.5em; }
 
+button {
+
+  padding: 10px;
+  max-width: 20vw;
+  min-width: 20vw;
+  background-color: transparent;
+  border-color: rgb(37, 206, 206);
+  color: #fff;
+  
+}
+button :hover{
+  background-color: #fff;
+  color: #000;
+}
 
 
-/* Button */
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
-button,
-.button {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  border-radius: 10px;
-  border: 1px black;
-  color: #000000 !important;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: 700;
-  height: 2.75em;
-  line-height: 2.75em;
-  padding: 0 1.125em;
-  text-align: center;
-  text-decoration: none;
-  min-width: 50%;
-  max-width: 50%;
-  padding: 15px;
-  text-align: center;
-  text-decoration: none;
-  white-space: nowrap; }
-  input[type="submit"]:hover,
-  input[type="reset"]:hover,
-  input[type="button"]:hover,
-  button:hover,
-  .button:hover {
-    border-color: hsl(261, 73%, 46%); }
-  input[type="submit"]:active,
-  input[type="reset"]:active,
-  input[type="button"]:active,
-  button:active,
-  .button:active {
-    border-color: #25f594; }
-  input[type="submit"].disabled, input[type="submit"]:disabled,
-  input[type="reset"].disabled,
-  input[type="reset"]:disabled,
-  input[type="button"].active,
-  input[type="button"]:active,
-  button.disabled,
-  button:disabled,
-  .button.disabled,
-  .button:disabled {
-    opacity: 0.5; }
-  @media screen and (max-width: 480px) {
-    input[type="submit"],
-    input[type="reset"],
-    input[type="button"],
-    button,
-    .button {
-      padding: 0; } }
 
 /* Header */
 #header h1 {
