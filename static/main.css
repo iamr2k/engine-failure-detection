@@ -130,7 +130,7 @@ body {
   transition: opacity 2s ease-in-out;
   height: 100%;
   left: 0;
-  opacity: 0.375;
+  opacity: 0.5;
   position: fixed;
   top: 0;
   width: 100%;
@@ -439,11 +439,6 @@ button,
   -webkit-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
-  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
-  -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
-  background-color: #ffffff;
   border-radius: 10px;
   border: 1px black;
   color: #000000 !important;
@@ -457,7 +452,7 @@ button,
   text-decoration: none;
   min-width: 50%;
   max-width: 50%;
-  padding: 15px
+  padding: 15px;
   text-align: center;
   text-decoration: none;
   white-space: nowrap; }
@@ -466,13 +461,13 @@ button,
   input[type="button"]:hover,
   button:hover,
   .button:hover {
-    background-color: #1fcaa7; }
+    border-color: hsl(261, 73%, 46%); }
   input[type="submit"]:active,
   input[type="reset"]:active,
   input[type="button"]:active,
   button:active,
   .button:active {
-    background-color: #25f594; }
+    border-color: #25f594; }
   input[type="submit"].disabled, input[type="submit"]:disabled,
   input[type="reset"].disabled,
   input[type="reset"]:disabled,
