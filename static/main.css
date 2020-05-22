@@ -1,5 +1,5 @@
 @import url(fontawesome-all.min.css);
-
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 /*
 	Eventually by HTML5 UP
 	html5up.net | @ajlkn
@@ -16,8 +16,10 @@ tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
-
-  font-family: 'IBM Plex Mono', monospace;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
   vertical-align: baseline; }
 
 article, aside, details, figcaption, figure,
@@ -273,13 +275,17 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   color: #fff;
-  font-family: 'IBM Plex Mono', monospace;
+  line-height: 1em;
+  font-family: 'Raleway', sans-serif;
+  margin: 0 0 1em 0; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     color: inherit;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none; }
 
 h1 {
-  font-family: 'IBM Plex Mono', monospace;; }
+  font-size: 2.5em;
+  font-family: 'Raleway', sans-serif; }
 
 h2 {
   font-size: 1.75em;
@@ -488,8 +494,9 @@ button,
 
 /* Header */
 #header h1 {
-  font-size: 35px;
-  font-family: 'IBM Plex Mono', monospace; }
+  font-size: 3.25em;
+  margin: 0 0 0.55em 0;
+  font-family: 'Raleway', sans-serif; }
 
 #header p {
   font-size: 1.35em;
@@ -500,8 +507,8 @@ button,
 
 @media screen and (max-width: 736px) {
   #header h1 {
-    font-size: 35px;
-    font-family: 'IBM Plex Mono', monospace; }
+    font-size: 2em;
+    font-family: 'Raleway', sans-serif; }
   #header p {
     font-size: 1em; } }
 
