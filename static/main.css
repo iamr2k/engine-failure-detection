@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
-  background-image: url("{{ url_for('static', filename='/static/images/01.gif) }}"); }
+  background-image: url("/static/images/01.gif"); }
 
 ol, ul {
   list-style: none; }
