@@ -361,12 +361,24 @@ section.special, article.special {
 header p {
   color: rgba(255, 255, 255, 0.5);
   position: relative;
-  margin: 0 0 1.5em 0; }
+  margin: 0 0 1.5em 0;
+  -webkit-animation: mainFadeIn 0.5s forwards;
+  -o-animation: mainFadeIn 0.5s forwards;
+  animation: mainFadeIn 0.5s forwards;
+  animation-delay: 0.9s;
+  opacity: 0;
+ }
 
 header h2 + p {
   font-size: 1.25em;
   margin-top: -1em;
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  -webkit-animation: mainFadeIn 0.5s forwards;
+  -o-animation: mainFadeIn 0.5s forwards;
+  animation: mainFadeIn 0.5s forwards;
+  animation-delay: 0.9s;
+  opacity: 0;
+ }
 
 header h3 + p {
   font-size: 1.1em;
@@ -501,11 +513,21 @@ button,
   font-size: 3.25em;
   font-weight: 100;
   margin: 0 0 0.55em 0;
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  -webkit-animation: mainFadeIn 0.5s forwards;
+  -o-animation: mainFadeIn 0.5s forwards;
+  animation: mainFadeIn 0.5s forwards;
+  animation-delay: 0.9s;
+  opacity: 0; }
 
 #header p {
   font-size: 1.35em;
-  line-height: 1.65em; }
+  line-height: 1.65em; 
+  -webkit-animation: mainFadeIn 0.5s forwards;
+  -o-animation: mainFadeIn 0.5s forwards;
+  animation: mainFadeIn 0.5s forwards;
+  animation-delay: 0.9s;
+  opacity: 0;}
 
 #header a {
   color: inherit; }
@@ -521,4 +543,11 @@ button,
 @media screen and (max-width: 480px) {
   #header {
     margin: 0 0 1em 0; } }
-
+@keyframes mainFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  
