@@ -28,8 +28,7 @@ footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
-  line-height: 1;
-  background-image: url("{{ url_for('static', filename='main.css') }}"); }
+  line-height: 1; }
 
 ol, ul {
   list-style: none; }
