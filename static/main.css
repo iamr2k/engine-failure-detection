@@ -130,7 +130,7 @@ body {
   transition: opacity 2s ease-in-out;
   height: 100%;
   left: 0;
-  opacity: 0.5;
+  opacity: 0.1;
   position: fixed;
   top: 0;
   width: 100%;
@@ -401,6 +401,14 @@ button {
   cursor: pointer;
   margin: 5px;
   box-shadow: 0 2px 12px 8px rgba(0, 74, 233, 0.2);
+}
+img{
+  width: 90vw;
+  height: auto;
+  opacity: 0.05;
+  position: fixed;
+  top: 100px;
+  left: 30%;
 }
 
 .fa {
