@@ -228,12 +228,14 @@ body {
 
 
 p {
-  margin: 0 0 2em 0; }
+  margin: 0 0 2em 0; 
+  font-family: 'Open Sans', sans-serif;}
 
 h1, h2, h3, h4, h5, h6 {
   color: #fff;
   font-weight: 700;
   line-height: 1em;
+  font-family: 'Open Sans', sans-serif;
   margin: 0 0 1em 0; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     color: inherit;
@@ -241,7 +243,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 2.5em;
-  line-height: 1.25em; }
+  line-height: 1.25em; 
+  font-family: 'Open Sans', sans-serif;}
 
 h2 {
   font-size: 1.75em;
@@ -313,7 +316,8 @@ section.special, article.special {
 header p {
   color: rgba(255, 255, 255, 0.5);
   position: relative;
-  margin: 0 0 1.5em 0; }
+  margin: 0 0 1.5em 0;
+  font-family: 'Open Sans', sans-serif; }
 
 header h2 + p {
   font-size: 1.25em;
@@ -388,27 +392,32 @@ button {
 
   padding: 10px;
   max-width: 20vw;
-  min-width: 20vw;
+  top: 50px;
+  font-family: 'Courier New', Courier, monospace;
   background-color: transparent;
-  border-color: rgb(37, 206, 206);
+  border: 2px solid rgb(82, 15, 206); /* Green */
   color: #fff;
-  
-}
-button :hover{
-  background-color: #fff;
-  color: #000;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  box-shadow: 0 2px 12px 8px rgba(0, 74, 233, 0.2);
 }
 
-
+.fa {
+  margin-left: -12px;
+  margin-right: 8px;
+}
 
 /* Header */
 #header h1 {
   font-size: 3.25em;
-  margin: 0 0 0.55em 0; }
+  margin: 0 0 0.55em 0;
+  font-family: 'Open Sans', sans-serif; }
 
 #header p {
   font-size: 1.35em;
-  line-height: 1.65em; }
+  line-height: 1.65em;
+  font-family: 'Open Sans', sans-serif; }
 
 #header a {
   color: inherit; }
@@ -421,5 +430,8 @@ button :hover{
 
 @media screen and (max-width: 480px) {
   #header {
-    margin: 0 0 1em 0; } }
+    margin: 0 0 1em 0; }
+  button {
+    min-width: 50%;
+  } }
 
