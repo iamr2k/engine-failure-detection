@@ -136,7 +136,7 @@ body {
   transition: opacity 2s ease-in-out;
   height: 100%;
   left: 0;
-  opacity: 0.1;
+  opacity: 0.15;
   position: fixed;
   top: 0;
   width: 100%;
@@ -396,8 +396,9 @@ ul {
 
 button {
 
-  padding: 10px;
+  padding: 12px;
   max-width: 20vw;
+  min-width: 15%;
   top: 50px;
   font-family: 'Courier New', Courier, monospace;
   background-color: transparent;
@@ -405,13 +406,13 @@ button {
   color: #fff;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 5px;
+  margin-left: 50%;
   box-shadow: 0 2px 12px 8px rgba(0, 74, 233, 0.2);
 }
 img{
   width: 90vw;
   height: auto;
-  opacity: 0.05;
+  opacity: 0.5;
   position: fixed;
   top: 100px;
   left: 30%;
