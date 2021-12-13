@@ -189,9 +189,9 @@
 						}
 					}, {
 						includeSpectrogram: true, // in case listen should return result.spectrogram
-						probabilityThreshold: 0.75, // probability threshold for including a detected word in the result
+						probabilityThreshold: 0.6, // probability threshold for including a detected word in the result
 						invokeCallbackOnNoiseAndUnknown: true,
-						overlapFactor: 0.5 // probably want between 0.5 and 0.75. More info in README
+						overlapFactor: 0 // probably want between 0.5 and 0.75. More info in README
 					});
 			
 					// Stop the recognition in 15 seconds.
