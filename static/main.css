@@ -401,7 +401,7 @@ button {
   top: 50px;
   font-family: 'Courier New', Courier, monospace;
   background-color: transparent;
-  border: 2px solid rgb(82, 15, 206); /* Green */
+  border: 2px solid rgb(168, 168, 168); /* Green */
   color: #fff;
   transition: all 0.5s;
   cursor: pointer;
