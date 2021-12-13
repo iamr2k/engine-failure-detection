@@ -42,6 +42,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+
+canvas {
+    width: 800px;
+    height: 130px;
+    margin: 2rem auto;
+}
 body {
   -webkit-text-size-adjust: none; }
 
@@ -442,4 +448,37 @@ img{
   button {
     min-width: 50%;
   } }
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  body,
+  main {
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    font-family: sans-serif;
+    text-align: center;
+    color: #fff;
+    background: #000;
+  }
 
+
+  main > div {
+    display: inline-block;
+    width: 3px;
+    height: 100px;
+    margin: 0 7px;
+    background: currentColor;
+    transform: scaleY(0.5);
+    opacity: 0.25;
+  }
+  main.error {
+    color: #f7451d;
+    min-width: 20em;
+    max-width: 30em;
+    margin: 0 auto;
+    white-space: pre-line;
+  }
+  
