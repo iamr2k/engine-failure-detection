@@ -219,7 +219,7 @@ hr {
 
 /* Section/Article */
 section.special, article.special {
-  text-align: center; }
+  text-align: left; }
 
 header p {
   color: rgba(255, 255, 255, 0.5);
@@ -308,7 +308,7 @@ button {
   color: #fff;
   transition: all 0.5s;
   cursor: pointer;
-  margin-left: 50%;
+  
   box-shadow: 0 2px 12px 8px rgba(0, 74, 233, 0.2);
 }
 img{
@@ -362,10 +362,11 @@ img{
     padding: 0;
     min-width: 100%;
     font-family: sans-serif;
-    text-align: center;
+    text-align: left;
+    padding-left: 50px;
     color: #fff;
-    background: #000;
-    background: rgb(11, 11, 20);
+
+    background: rgb(20, 20, 34);
     overflow: hidden;
   }
 
@@ -400,7 +401,7 @@ img{
   }
   
   body {
-    background: #0b0b14;
+    background: rgb(20, 20, 34);
     overflow: hidden;
   }
   

@@ -22,10 +22,11 @@
 				<h1>Artificial Intelligence <br> to analyse vehicle sound</h1>
 				<p>This is a beta experiment to check I.C engine's R.P.M by analysing engine sound</p>
 			</header>
-			<main><br>
-			<button type="button" id="but" class="buttonload" onclick="init()" style="display: flex;
-			justify-content: center; margin-left:26%;" > Start</button>
-			  </main>
+			<button type="button" id="but" class="buttonload" onclick="init()"  > Start</button>
+			<br>
+			<main style="display:none;" id="ma">
+			
+			</main>
 			<br><br><br>
 			
 			<div id="label-container"></div>
@@ -115,9 +116,11 @@
 				async function init() {
 					document.getElementById('but').setAttribute("class", "button2");
 					document.getElementById("but").innerHTML = "loading libraries..";
+					document.getElementById("ma").style.display = "block";
 					const recognizer = await createModel();
 					const classLabels = recognizer.wordLabels(); // get class labels
 					const labelContainer = document.getElementById("label-container");
+					document.getElementById("but").style.display = "none";
 					
 						// Creating initial DOM elements
 						const audioContext = new AudioContext();
