@@ -23,10 +23,11 @@
 				<p>This is a beta experiment to check I.C engine's R.P.M by analysing engine sound</p>
 			</header>
 			<main><br>
-			<button type="button" class="buttonload" onclick="init()" style="display: flex;
+			<button type="button" id="but" class="buttonload" onclick="init()" style="display: flex;
 			justify-content: center; margin-left:26%;" > Start</button>
 			  </main>
 			<br><br><br>
+			
 			<div id="label-container"></div>
 			<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
 			<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands@0.4.0/dist/speech-commands.min.js"></script>
@@ -112,9 +113,12 @@
 				}
 			
 				async function init() {
+					document.getElementById('but').setAttribute("class", "button2");
+					document.getElementById("but").innerHTML = "loading libraries..";
 					const recognizer = await createModel();
 					const classLabels = recognizer.wordLabels(); // get class labels
 					const labelContainer = document.getElementById("label-container");
+					
 						// Creating initial DOM elements
 						const audioContext = new AudioContext();
 						const initDOM = () => {
